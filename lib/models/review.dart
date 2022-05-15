@@ -1,0 +1,101 @@
+class Review {
+  late String _s0;
+  late String _s1;
+  late String _s2;
+  late String _s3;
+  late String _s4;
+  late String _s5;
+  late String _s6;
+  late String _s7;
+  late String _s8;
+  late String _reviewId;
+  late String _productId;
+  late String _customerId;
+  late String _author;
+  late String _text;
+  late String _rating;
+  late String _status;
+  late String _dateAdded;
+  late String _dateModified;
+
+  String get s0 => _s0;
+  set s0(String s0) => _s0 = s0;
+  String get s1 => _s1;
+  set s1(String s1) => _s1 = s1;
+  String get s2 => _s2;
+  set s2(String s2) => _s2 = s2;
+  String get s3 => _s3;
+  set s3(String s3) => _s3 = s3;
+  String get s4 => _s4;
+  set s4(String s4) => _s4 = s4;
+  String get s5 => _s5;
+  set s5(String s5) => _s5 = s5;
+  String get s6 => _s6;
+  set s6(String s6) => _s6 = s6;
+  String get s7 => _s7;
+  set s7(String s7) => _s7 = s7;
+  String get s8 => _s8;
+  set s8(String s8) => _s8 = s8;
+  String get reviewId => _reviewId;
+  set reviewId(String reviewId) => _reviewId = reviewId;
+  String get productId => _productId;
+  set productId(String productId) => _productId = productId;
+  String get customerId => _customerId;
+  set customerId(String customerId) => _customerId = customerId;
+  String get author => _author;
+  set author(String author) => _author = author;
+  String get text => _text;
+  set text(String text) => _text = text;
+  String get rating => _rating;
+  set rating(String rating) => _rating = rating;
+  String get status => _status;
+  set status(String status) => _status = status;
+  String get dateAdded => _dateAdded;
+  set dateAdded(String dateAdded) => _dateAdded = dateAdded;
+  String get dateModified => _dateModified;
+  set dateModified(String dateModified) => _dateModified = dateModified;
+
+  Review.fromJson(Map<String, dynamic> json) {
+    _s0 = json['0'].toString();
+    _s1 = json['1'].toString();
+    _s2 = json['2'].toString();
+    _s3 = json['3'].toString();
+    _s4 = json['4'].toString();
+    _s5 = json['5'].toString();
+    _s6 = json['6'].toString();
+    _s7 = json['7'].toString();
+    _s8 = json['8'].toString();
+    _reviewId = json['review_id'].toString();
+    _productId = json['product_id'].toString();
+    _customerId = json['customer_id'].toString();
+    _author = json['author'].toString();
+    _text = json['text'].toString();
+    _rating = json['rating'].toString();
+    _status = json['status'].toString();
+    _dateAdded = json['date_added'].toString();
+    _dateModified = json['date_modified'].toString();
+  }
+
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = new Map<String, dynamic>();
+    data['0'] = this._s0;
+    data['1'] = this._s1;
+    data['2'] = this._s2;
+    data['3'] = this._s3;
+    data['4'] = this._s4;
+    data['5'] = this._s5;
+    data['6'] = this._s6;
+    data['7'] = this._s7;
+    data['8'] = this._s8;
+    data['review_id'] = this._reviewId;
+    data['product_id'] = this._productId;
+    data['customer_id'] = this._customerId;
+    data['author'] = this._author;
+    data['text'] = this._text;
+    data['rating'] = this._rating;
+    data['status'] = this._status;
+    data['date_added'] = this._dateAdded;
+    data['date_modified'] = this._dateModified;
+    return data;
+  }
+}
